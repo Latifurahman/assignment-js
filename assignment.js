@@ -2,12 +2,14 @@
 // kilometer to meter part start-----------
 
 function kilometerToMeter(kilometer){
-    const meter = kilometer * 1000;
+    var meter = kilometer * 1000;
     return meter;
 }
 
-let result = kilometerToMeter(100);
+var result = kilometerToMeter(100);
 console.log(result);
+
+
 
 
 
@@ -21,6 +23,7 @@ function budgetCalculator(watch, phone, laptop){
 
 var total = budgetCalculator( 50, 100, 500 );
 console.log(total);
+
 
 
 
@@ -54,6 +57,22 @@ console.log(total);
 
 
 
+
+
+
 // mega friend part start------------
 
-  
+function megaFriend(longestword){
+  var count = longestword[0];
+  for(var i = 0; i < longestword.length; i++){
+    var element = longestword[i];
+    if(element.length > count.length){
+      count = element;
+    }
+  }
+  return count;
+}
+
+var friends = ["abir", "imran", "rocky", "durlove", "kanto"];
+var result = megaFriend(friends);
+console.log(result);
